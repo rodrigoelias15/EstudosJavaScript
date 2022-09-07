@@ -12,12 +12,38 @@
         </style>
     </head>
 
-    <body>
+    <body onresize="alert('Houve redimensionamento')" onload="alert('Página carregada!')" onerror="alert('WARNING: Error on Page!!')"> <!--Neste caso a string soh eh reconhecida com aspas simples-->
         <h1>Aprendendo JavaScript</h1>
         <p id="texto"></p>
+        <p id="teclaPress"></p>
+
+        <button onclick="causaErro()" title="Clique para forçar um erro e exibir um alerta (função chamada não foi declarada)">Forçar Erro</button>
+        <br><br>
+
+        <button onclick="mudaCorFundo()" title="Clique aqui para alterar fundo da página">Clique Aqui</button>
+        <br><br>
+             
+        <button onclick="exibirAlerta()" title="Clique aqui para exibir um alerta">Clique Aqui</button>
+        <br><br>
+        
+        <!-- Pode-se chamar mais de um evento na tag -->
+        <div id="containerColorido" style="margin: auto auto; background: blue; width: 80%; height: 200px" onmousemove="mudaCorDiv1()" onmouseout="mudaCorDiv2()" onclick="adicionaTexto()"></div>
+        <br><br>
+        
+        <label for="campoTexto">Digite Alguma Coisa:</label>
+        <input id="campoTexto" type="text" placeholder="Campo de Texto" style="border: 2px solid black; padding: 12px 10px" onblur="apagaTexto()" onkeyup="teclaPressionada()">
+        <br><br>
+        
+        <select name="valores" id="select1" onchange="mudanca()">
+            <option value="1">Valor 1</option>
+            <option value="2">Valor 2</option>
+            <option value="3">Valor 3</option>
+            <option value="4">Valor 4</option>
+        </select>
+
         
         <!-- Inserção do script é feita no fim de body para que documento HTML seja totalmente carregado e só depois executar o JS.
         A tag script pode ser colocada em qualquer lugar caso usemos o atributo "defer" (adiar), assim o documento HTML é carregado antes do script, independente de onde a tag do JS esteja. O atributo "async" (assíncrono) carrega o JS a partir do momento que o browser lê a tag script -->
-        <script src="js/aula5.js"></script>
+        <script src="js/aula6.js"></script>
     </body>
 </html>
