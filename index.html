@@ -1,26 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Aprendendo JS</title>
-        <style>
-            body{
-                text-align: center;
-            }
-        </style>
-    </head>
 
-    <body> <!--Neste caso a string soh eh reconhecida com aspas simples-->
-        <h1>Aprendendo JavaScript</h1>
-        <p id="texto1"></p>
-        <p id="texto2"></p>
-        <p id="texto3"></p>
-        <p id="texto4"></p>
-        
-        <!-- Inserção do script é feita no fim de body para que documento HTML seja totalmente carregado e só depois executar o JS.
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo JS</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Neste caso a string soh eh reconhecida com aspas simples-->
+    <h1>Aprendendo JavaScript</h1>
+    <p id="texto1"></p>
+    <input id="campoTexto" type="text" placeholder="Digite seu nome" style="padding: 20px; font-size: 40px;">
+    <button style="padding: 30px;" onclick="verificaTexto()">Verificar campo</button>
+
+    <!-- Inserção do script é feita no fim de body para que documento HTML seja totalmente carregado e só depois executar o JS.
         A tag script pode ser colocada em qualquer lugar caso usemos o atributo "defer" (adiar), assim o documento HTML é carregado antes do script, independente de onde a tag do JS esteja. O atributo "async" (assíncrono) carrega o JS a partir do momento que o browser lê a tag script -->
-        <script src="js/aula7.js"></script>
-    </body>
+    <script src="js/aula8.js"></script>
+</body>
+
 </html>
