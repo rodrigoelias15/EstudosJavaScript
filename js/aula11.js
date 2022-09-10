@@ -5,10 +5,19 @@ function ativarContagemSetTimeout() {
     document.getElementById("tempoSetTimeout").innerHTML = "Começou a contar";
     // variável "tempo" de escopo global, neste caso não é declarada como let ou var
     tempo1 = setTimeout(function () {
-        document.getElementById("tempoSetTimeout").innerHTML =
-        "Executou o setTimeout!";
+        document.getElementById("tempoSetTimeout").innerHTML = "Executou o setTimeout!";
     }, 2000); // executa a função passada por parâmetro uma vez em um determinado intervalo de tempo (milissegundos)
 }
+
+// forma alternativa de escrever setTimeout usando arrow function
+/* 
+function ativarContagemSetTimeout() {
+    document.getElementById("tempoSetTimeout").innerHTML = "Começou a contar";
+    tempo1 = setTimeout(() => {
+        document.getElementById("tempoSetTimeout").innerHTML = "Executou o setTimeout!";
+    }, 2000);
+} 
+*/
 
 function pararContagemSetTimeout() {
     clearTimeout(tempo1);
