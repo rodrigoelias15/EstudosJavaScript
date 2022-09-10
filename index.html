@@ -17,12 +17,14 @@
     <!--Neste caso a string soh eh reconhecida com aspas simples-->
     <h1>Aprendendo JavaScript</h1>
     <p id="texto1"></p>
-    <input id="cor" type="text" placeholder="Digite seu nome" style="padding: 20px; font-size: 40px;">
-    <button style="padding: 30px;" onclick="verificaCor()">Verificar campo</button>
+
+    <select name="anoselect" id="ano">
+        <option disabled>Selecione o ano</option>
+    </select>
 
     <!-- Inserção do script é feita no fim de body para que documento HTML seja totalmente carregado e só depois executar o JS.
         A tag script pode ser colocada em qualquer lugar caso usemos o atributo "defer" (adiar), assim o documento HTML é carregado antes do script, independente de onde a tag do JS esteja. O atributo "async" (assíncrono) carrega o JS a partir do momento que o browser lê a tag script -->
-    <script src="js/aula9.js"></script>
+    <script src="js/aula10.js"></script>
 </body>
 
 </html>
