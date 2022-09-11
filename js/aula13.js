@@ -37,6 +37,7 @@ if (hoje > vencimento) {
 var dataInicial, dataFinal, diferencaTempo, diferencaDias;
 dataInicial = new Date();
 dataFinal = new Date(2022, 11, 31);
-diferencaTempo = dataFinal.getTime() - dataInicial.getTime();
+diferencaTempo = dataFinal.getTime() - dataInicial.getTime(); // getTime fornece tempo em milissegundos
 diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000)); // acessa operações matematicas e arredonda a diferença de dias
 console.log(diferencaDias + " dias");
+console.log(dataFinal.getTime());
