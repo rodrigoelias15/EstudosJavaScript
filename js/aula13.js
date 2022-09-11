@@ -15,9 +15,8 @@ minutos = hoje.getMinutes(); // 0 à 59
 segundos = hoje.getSeconds(); // 0 à 59
 milisegundos = hoje.getMilliseconds(); // 0 à 999
 dataBR1 = hoje.toLocaleString("pt-BR"); // data.toLocaleString("br") ou data.toLocaleString() também funciona. Podemos escrever simbolos de outras regiões tbm
-dataBR2 = hoje.toLocaleString("pt-BR", {dateStyle: "short"});
-dataBR3 = hoje.toLocaleString("pt-BR", {timeStyle: "short"});
-
+dataBR2 = hoje.toLocaleString("pt-BR", { dateStyle: "short" });
+dataBR3 = hoje.toLocaleString("pt-BR", { timeStyle: "short" });
 
 console.log(hoje);
 console.log(diaMes);
@@ -34,3 +33,10 @@ if (hoje > vencimento) {
 } else {
     console.log("Conta ainda não venceu!");
 }
+
+var dataInicial, dataFinal, diferencaTempo, diferencaDias;
+dataInicial = new Date();
+dataFinal = new Date(2022, 11, 31);
+diferencaTempo = dataFinal.getTime() - dataInicial.getTime();
+diferencaDias = Math.ceil(diferencaTempo / (24 * 60 * 60 * 1000)); // acessa operações matematicas e arredonda a diferença de dias
+console.log(diferencaDias + " dias");
