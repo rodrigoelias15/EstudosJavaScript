@@ -32,7 +32,7 @@ listaSalgadinhos.sort(); // método sort deixa elementos em ordem alfabética
 document.getElementById("texto3").innerHTML = "Lista em ordem inversa: " + listaSalgadinhos.reverse().join(", "); // método reverse inverte ordem dos elementos
 
 // ordenar números
-listaNumerica.sort((a, b) => a - b); // Arrow functions são usadas para expressões curtas, podemos omitir nome da função, substituir {} que envolvem declarações (statements) e substituir return
+listaNumerica.sort((a, b) => a - b); // Arrow functions são usadas para expressões curtas, podemos omitir nome da função, substituir {} que envolvem declarações (statements) e substituir return. Possuem certas limitações em relação às functions convencionais, não tem seu próprio this, arguments, super ou new.target, são melhor aplicadas para funções que não sejam métodos e não podem ser usadas como construtoras
 listaNumerica.sort(function (a, b){ // função anônima (nome pode ser omitido)
     return a - b;
 });
