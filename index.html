@@ -10,45 +10,15 @@
         body {
             text-align: center;
         }
-
-        .start {
-            background-color: green;
-            padding: 20px;
-        }
-
-        .stop {
-            background-color: tomato;
-            padding: 20px;
-        }
-
-        .contagem1,.contagem2 {
-            margin: 15px;
-            display: inline-block;
-        }
-        /* inline-block deixa divs uma ao lado da outra */
     </style>
 </head>
 
 <body>
-    <!--Neste caso a string soh eh reconhecida com aspas simples-->
-
-    <h1>Controle de tempo</h1>
-
-    <div class="contagem1">
-        <h2 id="tempoSetTimeout">0</h2>
-        <button class="start" onclick="ativarContagemSetTimeout()">Ativar contagem (setTimeout)</button>
-        <button class="stop" onclick="pararContagemSetTimeout()">Parar contagem</button>
-    </div>
-    <div class="contagem2">
-        <h2 id="tempoSetInterval">0</h2>
-        <button class="start" onclick="ativarContagemSetInterval()">Ativar contagem (setInterval)</button>
-        <button class="stop" onclick="pararContagemSetInterval()">Parar contagem</button>
-    </div>
-
-
+   
+    
     <!-- Inserção do script é feita no fim de body para que documento HTML seja totalmente carregado e só depois executar o JS.
         A tag script pode ser colocada em qualquer lugar caso usemos o atributo "defer" (adiar), assim o documento HTML é carregado antes do script, independente de onde a tag do JS esteja. O atributo "async" (assíncrono) carrega o JS a partir do momento que o browser lê a tag script -->
-    <script src="js/aula11.js"></script>
+    <script src="js/aula12.js"></script>
 </body>
 
 </html>
